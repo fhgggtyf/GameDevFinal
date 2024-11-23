@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Conditions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Conditions",
+  "parent":{
+    "name":"StateMachine",
+    "path":"folders/Scripts/StateMachine.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
