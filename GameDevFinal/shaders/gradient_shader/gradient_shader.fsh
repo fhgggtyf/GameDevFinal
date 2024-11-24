@@ -8,8 +8,12 @@ uniform float u_dim_rads[16];     // Array of dim radii
 uniform float u_angles[16];       // Array of cone angles (in radians)
 uniform float u_alpha_env;        // Environment base alpha
 uniform vec4 u_env_color;         // Environment mask color
+uniform vec2 u_camera_offset;     // Camera offset in world space
 
 void main() {
+    // Adjust the fragment position based on the camera offset
+    vec2 frag_world_pos = gl_FragCoord.xy + u_camera_offset;
+
     float alpha_final = u_alpha_env;
 
     for (int i = 0; i < u_num_lights; i++) {
@@ -18,14 +22,14 @@ void main() {
         float cone_angle = u_angles[i];
 
         // Vector from light to the fragment
-        vec2 frag_dir = normalize(gl_FragCoord.xy - light_center);
+        vec2 frag_dir = normalize(frag_world_pos - light_center);
 
         float alpha_light = 0.0;
 
         // Check if it's a point light (360-degree cone)
         if (cone_angle >= 6.28318) { // 2π radians for a full circle
             // Skip angle blending, handle only distance attenuation
-            float dist = distance(gl_FragCoord.xy, light_center);
+            float dist = distance(frag_world_pos, light_center);
             if (dist <= u_clear_rads[i]) {
                 alpha_light = 1.0; // Fully transparent within the clear radius
             } else if (dist <= u_dim_rads[i]) {
@@ -44,7 +48,7 @@ void main() {
             float angle_blend = smoothstep(cone_angle / 2.0 - 0.2, cone_angle / 2.0, angle_diff);
 
             // Calculate distance attenuation
-            float dist = distance(gl_FragCoord.xy, light_center);
+            float dist = distance(frag_world_pos, light_center);
             if (dist <= u_clear_rads[i]) {
                 alpha_light = 1.0 * (1.0 - angle_blend); // Fully transparent within the clear radius
             } else if (dist <= u_dim_rads[i]) {
