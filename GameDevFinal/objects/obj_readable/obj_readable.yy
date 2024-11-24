@@ -26,7 +26,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"my_text","filters":[],"listItems":[],"multiselect":false,"name":"my_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"THERE'S A SIGN ON THE DOOR HERE. IT READS: 'ELEVATOR OUT OF SERVICE'. A FOUL STENCH EMITS FROM BEHIND IT - COPPERY AND METALLIC.","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
