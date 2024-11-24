@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function calc_add(base, modifier_value) {
     return base + modifier_value;
 }
@@ -11,35 +9,50 @@ function calc_multiply(base, modifier_value) {
 
 function create_modifier(name, attribute, value, calculation) {
     return {
-		name: name,
+        name: name,
         attribute: attribute,  // Attribute to modify (e.g., "attack")
         value: value,          // Modification value (can be positive or negative)
         calculation: calculation, // Calculation function (e.g., add, multiply)
     };
 }
 
+// Sort modifiers by logical priority
+function sort_modifiers(modifiers) {
+    // Sort array based on calculation priority
+    array_sort(modifiers, function(a, b) {
+        // Define priorities: calc_multiply (0) is higher than calc_add (1)
+        var priority_a = (a.calculation == calc_multiply) ? 0 : 1;
+        var priority_b = (b.calculation == calc_multiply) ? 0 : 1;
+
+        return priority_a - priority_b;
+    });
+}
+
+
 function apply_collision_modifier(target, name, modifier, condition) {
     // Check if the target is colliding with the specified object
     if (condition) {
         // Apply the modifier only if it's not already active
-		
-		var exists = false;
-		for (var i = 0; i < array_length(target.modifiers); i++) {
-		    if (target.modifiers[i].name == modifier.name) {
-		        exists = true;
-		        break;
-		    }
-		}
+        var exists = false;
+        for (var i = 0; i < array_length(target.modifiers); i++) {
+            if (target.modifiers[i].name == modifier.name) {
+                exists = true;
+                break;
+            }
+        }
         if (!exists) {
-           // Get the current value dynamically
-			var current_value = variable_instance_get(target, modifier.attribute);
+            // Get the current value dynamically
+            var current_value = variable_instance_get(target, modifier.attribute);
 
-			// Calculate the new value using the modifier's calculation method
-			var new_value = modifier.calculation(current_value, modifier.value);
+            // Calculate the new value using the modifier's calculation method
+            var new_value = modifier.calculation(current_value, modifier.value);
 
-			// Set the new value dynamically
-			variable_instance_set(target, modifier.attribute, new_value);
+            // Set the new value dynamically
+            variable_instance_set(target, modifier.attribute, new_value);
             array_push(target.modifiers, modifier);
+
+            // Sort modifiers after adding a new one
+            sort_modifiers(target.modifiers);
         }
     } else {
         // Remove the modifier if it's no longer touching
@@ -48,21 +61,24 @@ function apply_collision_modifier(target, name, modifier, condition) {
             if (_mod.name == modifier.name) {
                 // Reverse the effect
                 if (_mod.calculation == calc_add) {
-					var current_value = variable_instance_get(target, modifier.attribute);
-					var new_value = current_value - _mod.value;
-					variable_instance_set(target, modifier.attribute, new_value);
+                    var current_value = variable_instance_get(target, modifier.attribute);
+                    var new_value = current_value - _mod.value;
+                    variable_instance_set(target, modifier.attribute, new_value);
                 } else if (_mod.calculation == calc_multiply) {
-					var current_value = variable_instance_get(target, modifier.attribute);
-					var new_value = current_value/_mod.value;
-					variable_instance_set(target, modifier.attribute, new_value);
+                    var current_value = variable_instance_get(target, modifier.attribute);
+                    var new_value = current_value / _mod.value;
+                    variable_instance_set(target, modifier.attribute, new_value);
                 }
                 array_delete(target.modifiers, i, 1);
+
+                // Sort modifiers after removing one
+                sort_modifiers(target.modifiers);
             }
         }
     }
 }
 
-function handle_collision_modifier(target,name, attribute, value, calculation, condition) {
+function handle_collision_modifier(target, name, attribute, value, calculation, condition) {
     var modifier = create_modifier(name, attribute, value, calculation);
     apply_collision_modifier(target, name, modifier, condition);
 }

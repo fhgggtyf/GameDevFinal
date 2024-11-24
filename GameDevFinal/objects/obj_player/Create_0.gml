@@ -18,6 +18,9 @@ noise = 500;
 
 modifiers=[];
 
+sprinting = false;
+crouching = false;
+
 light_source = instance_create_layer(x,y,"Instances",obj_lightsource);
 instance_deactivate_object(light_source);
 

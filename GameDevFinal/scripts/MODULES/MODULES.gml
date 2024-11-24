@@ -92,6 +92,12 @@ function create_enemy_behaviors() {
 		condition_scanned: create_condition(
 		    function (owner) {
 		        with (owner.vision_triangle) {
+					if(owner.player.light_opened){
+						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, object_index, true, false)) {
+						    return true;
+						}
+					}
+					
 		            // Vision triangle bounding box setup
 		            var ax, ay_top, ay_bottom;
 		            if (image_xscale == 1) {
@@ -180,6 +186,11 @@ function create_enemy_behaviors() {
 		condition_not_scanned: create_condition(
 			function (owner) {
 		        with (owner.vision_triangle) {
+					if(owner.player.light_opened){
+						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, object_index, true, false)) {
+						    return false;
+						}
+					}
 		            // Vision triangle bounding box setup
 		            var ax, ay_top, ay_bottom;
 		            if (image_xscale == 1) {

@@ -72,8 +72,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
