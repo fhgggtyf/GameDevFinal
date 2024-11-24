@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -44,6 +44,7 @@
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player_lights_collider","path":"objects/obj_player_lights_collider/obj_player_lights_collider.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_readable_tutorial","path":"objects/obj_readable_tutorial/obj_readable_tutorial.yy",},},
     {"id":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},},
     {"id":{"name":"obj_shader_controller","path":"objects/obj_shader_controller/obj_shader_controller.yy",},},
     {"id":{"name":"obj_temp_alarm_display","path":"objects/obj_temp_alarm_display/obj_temp_alarm_display.yy",},},
@@ -65,6 +66,7 @@
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_read_interact","path":"sprites/spr_read_interact/spr_read_interact.yy",},},
+    {"id":{"name":"spr_read_tutorial","path":"sprites/spr_read_tutorial/spr_read_tutorial.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
     {"id":{"name":"spr_vision_cone","path":"sprites/spr_vision_cone/spr_vision_cone.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
@@ -72,8 +74,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
