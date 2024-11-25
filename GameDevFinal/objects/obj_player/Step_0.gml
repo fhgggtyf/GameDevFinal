@@ -6,6 +6,10 @@ sprinting = keyboard_check(vk_shift);
 crouching = keyboard_check(ord("C"));
 if (crouching && sprinting) crouching = sprinting = false;
 
+top = bbox_top + (image_index == 1 ? 0.5 : 0) * sprite_height;
+bot=bbox_bottom;
+left=bbox_left;
+right = bbox_right;
 
 handle_collision_modifier(self, "SprintSpeed", "mspd", 1.5, calc_multiply, sprinting);
 handle_collision_modifier(self, "SprintAccel", "accel", 1.5, calc_multiply, sprinting);
@@ -35,9 +39,14 @@ handle_collision_modifier(self, "CrouchNoise", "noise", 0.5, calc_multiply, crou
 light_source.x = x;
 light_source.y = y;
 
+
+
 if(platform != -1){
 	handle_collision_modifier(self, "GroundNoise", "noise", platform.noise_multiplier, calc_multiply, moving);
 }
+
+show_debug_message(noise);
+
 
 
 

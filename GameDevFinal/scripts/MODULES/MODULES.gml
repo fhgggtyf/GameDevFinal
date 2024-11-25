@@ -13,8 +13,15 @@ function create_enemy_behaviors() {
 
         module_chase: create_module(
             function (owner) {  }, // Init
-            function (owner) { owner.hmove = 3 * sign(player.x - owner.x); 
-				show_debug_message("chasing")}, // Update
+            function (owner) {
+				if(abs(player.x - owner.x) < 20){
+					owner.hmove = 0;
+				}
+				else{
+					owner.hmove = 3 * sign(player.x - owner.x);
+				}
+				show_debug_message("chasing");
+				}, // Update
             function (owner) { owner.hmove = 0;} // Exit
         ),
 		
@@ -49,8 +56,9 @@ function create_enemy_behaviors() {
 			function(owner) {},
 			function(owner) { 
 				owner.vision_triangle.image_xscale *= sign(owner.image_xscale) == sign(owner.vision_triangle.image_xscale) ? 1 : -1 
-				owner.vision_triangle.x = x + image_xscale * 0.5 * sprite_width;
-				owner.vision_triangle.y = y - 0.5*sprite_height;
+				owner.vision_triangle.x = owner.x - owner.vision_triangle.image_xscale * 0.5 * abs(owner.sprite_width);
+				owner.vision_triangle.y = owner.y - 0.5 * owner.sprite_height;
+				owner.vision_triangle.image_index = owner.sm.current_state;
 				},
 			function(owner) {}	
 		),
@@ -111,10 +119,10 @@ function create_enemy_behaviors() {
 		            }
 
 		            // Target bounding box
-		            var tx1 = owner.player.bbox_left;
-		            var ty1 = owner.player.bbox_top;
-		            var tx2 = owner.player.bbox_right;
-		            var ty2 = owner.player.bbox_bottom;
+		            var tx1 = owner.player.left;
+		            var ty1 = owner.player.top;
+		            var tx2 = owner.player.right;
+		            var ty2 = owner.player.bot;
 
 		            // Debug the bounding boxes
 		            show_debug_message("Vision Bounds: ax=" + string(ax) + ", ay_top=" + string(ay_top) + ", ay_bottom=" + string(ay_bottom));
@@ -203,11 +211,11 @@ function create_enemy_behaviors() {
 		                ay_bottom = bbox_bottom;
 		            }
 
-		            // Target bounding box
-		            var tx1 = owner.player.bbox_left;
-		            var ty1 = owner.player.bbox_top;
-		            var tx2 = owner.player.bbox_right;
-		            var ty2 = owner.player.bbox_bottom;
+					var tx1 = owner.player.left;
+		            var ty1 = owner.player.top;
+		            var tx2 = owner.player.right;
+		            var ty2 = owner.player.bot;
+
 
 		            // Debug the bounding boxes
 		            show_debug_message("Vision Bounds: ax=" + string(ax) + ", ay_top=" + string(ay_top) + ", ay_bottom=" + string(ay_bottom));

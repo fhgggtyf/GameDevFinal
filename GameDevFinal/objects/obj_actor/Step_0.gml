@@ -24,18 +24,18 @@ if (jump_press and num_jumps > 0){
 
 
 //wall jump
-if (on_wall){
-	if (jump_press){
-		//jump up some and...
-		yspd = -jump_str/2;
-		//jump out in correct direction
-		if (on_wall_left){
-			xspd = wall_xjump;	
-		} else {
-			xspd = -wall_xjump;	
-		}
-	}
-}
+//if (on_wall){
+//	if (jump_press){
+//		//jump up some and...
+//		yspd = -jump_str/2;
+//		//jump out in correct direction
+//		if (on_wall_left){
+//			xspd = wall_xjump;	
+//		} else {
+//			xspd = -wall_xjump;	
+//		}
+//	}
+//}
 
 //if moving, apply acceleration. otherwise decelerate
 if (moving){
