@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_basic_enemy",
-    "path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",
+    "name":"spr_basic",
+    "path":"sprites/spr_basic/spr_basic.yy",
   },
   "spriteMaskId":null,
   "visible":true,
