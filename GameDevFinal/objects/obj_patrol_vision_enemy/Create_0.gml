@@ -24,7 +24,7 @@ player= instance_find(obj_player,0);
 eb = create_enemy_behaviors()
 
 // Create states
-idle_state = create_state([eb.module_idle, eb.module_update_vision_cone, eb.module_left_right_look]);
+idle_state = create_state([eb.module_patrol, eb.module_update_vision_cone, eb.module_left_right_look]);
 chase_state = create_state([eb.module_chase, eb.module_update_vision_cone]);
 
 // Create state machine

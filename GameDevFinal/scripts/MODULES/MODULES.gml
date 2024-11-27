@@ -11,18 +11,15 @@ function create_enemy_behaviors() {
         ),
 		
 		module_patrol: create_module(
-			function (owner) {  }, // Init
+			function (owner) { owner.hmove = -1; }, // Init
             function (owner) {
-				switch owner.image_xscale{
-					case 1:
-						owner.hmove = 1;
-						break;
-					case -1: 
-						owner.hmove = -1;
-						break;
+				if (place_meeting(owner.x + sign(owner.hmove), owner.y, obj_platform) || place_meeting(owner.x + sign(owner.hmove), owner.y, obj_patrol_ledge)){
+					owner.hmove *= -1;
+					show_debug_message("overlap");
 				}
 			}, // Update
-            function (owner) { owner.hmove = 0;} // Exit
+            function (owner) { 
+				owner.hmove = 0;} // Exit
 		),
 
         module_chase: create_module(

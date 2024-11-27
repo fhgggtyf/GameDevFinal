@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_basic_vision_enemy",
+  "%Name":"obj_patrol_vision_enemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_basic_vision_enemy",
+  "name":"obj_patrol_vision_enemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
