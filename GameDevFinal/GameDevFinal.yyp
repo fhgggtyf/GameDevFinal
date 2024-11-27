@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -64,6 +64,7 @@
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
     {"id":{"name":"spr_basic_vision_enemy","path":"sprites/spr_basic_vision_enemy/spr_basic_vision_enemy.yy",},},
     {"id":{"name":"spr_basic","path":"sprites/spr_basic/spr_basic.yy",},},
+    {"id":{"name":"spr_faster","path":"sprites/spr_faster/spr_faster.yy",},},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_read_interact","path":"sprites/spr_read_interact/spr_read_interact.yy",},},
