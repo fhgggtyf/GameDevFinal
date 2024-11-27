@@ -9,6 +9,21 @@ function create_enemy_behaviors() {
             function (owner) { show_debug_message("idle")}, // Update
             function (owner) { /* No exit logic */ }
         ),
+		
+		module_patrol: create_module(
+			function (owner) {  }, // Init
+            function (owner) {
+				switch owner.image_xscale{
+					case 1:
+						owner.hmove = 1;
+						break;
+					case -1: 
+						owner.hmove = -1;
+						break;
+				}
+			}, // Update
+            function (owner) { owner.hmove = 0;} // Exit
+		),
 
         module_chase: create_module(
             function (owner) {  }, // Init
