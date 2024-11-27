@@ -10,6 +10,8 @@ top = bbox_top + (image_index == 1 ? 0.5 : 0) * sprite_height;
 bot=bbox_bottom;
 left=bbox_left;
 right = bbox_right;
+midl = [bbox_left, top + (image_index == 1 ? 0.25 : 0.5) * sprite_height];
+midr = [bbox_right, top + (image_index == 1 ? 0.25 : 0.5) * sprite_height]
 
 handle_collision_modifier(self, "SprintSpeed", "mspd", 1.5, calc_multiply, sprinting);
 handle_collision_modifier(self, "SprintAccel", "accel", 1.5, calc_multiply, sprinting);

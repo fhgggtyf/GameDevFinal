@@ -25,6 +25,8 @@ left = 0;
 top = 0;
 right = 0;
 bot = 0;
+midl = 0;
+midr = 0;
 
 light_source = instance_create_layer(x,y,"Instances",obj_lightsource);
 instance_deactivate_object(light_source);
