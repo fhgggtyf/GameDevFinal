@@ -4,6 +4,8 @@
 
 event_inherited();
 
+spr = spr_basic;
+
 mspd = 3;
 accel= .2;
 decel = 0.2;
