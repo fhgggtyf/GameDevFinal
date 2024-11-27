@@ -4,4 +4,4 @@
 draw_sprite(spr_textbox, 0, x, y);
 
 draw_set_font(custom_font);
-draw_text_ext(x, y, text, stringHeight, boxWidth);
+draw_text_ext(x - sprite_get_width(spr_textbox)/2, y, text, stringHeight, boxWidth);
