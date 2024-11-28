@@ -14,6 +14,9 @@ jump_hold_time = 1;
 can_wall_jump = false;
 wall_xjump = 0;
 
+chase_multiplier = 1;
+chasing = false;
+
 //do not modify
 grav_normal = grav;
 grav_neg = -grav;
@@ -31,6 +34,9 @@ on_wall = false;
 was_grounded = false;
 
 platform = -1;
+
+modifiers=[];
+
 
 function land(){
 	

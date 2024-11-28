@@ -6,7 +6,7 @@ on_wall_left = place_meeting(x-1, y, obj_platform);
 on_wall_right = place_meeting(x+1, y, obj_platform);
 on_wall = on_wall_left or on_wall_right;
 moving = (hmove != 0);
-
+image_xscale = sign(hmove) != 0 ? sign(hmove) : image_xscale;
 
 //if on the ground, bump up coyote time and restore all jumps
 if (on_ground){

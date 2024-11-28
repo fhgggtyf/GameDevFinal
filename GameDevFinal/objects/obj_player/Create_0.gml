@@ -16,8 +16,6 @@ max_jumps = 1;
 
 noise = 500;
 
-modifiers=[];
-
 sprinting = false;
 crouching = false;
 

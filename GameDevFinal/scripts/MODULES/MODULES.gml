@@ -6,16 +6,32 @@ function create_enemy_behaviors() {
         // Modules
         module_idle: create_module(
             function (owner) { owner.hmove = 0; },
-            function (owner) { show_debug_message("idle")}, // Update
-            function (owner) { /* No exit logic */ }
+            function (owner) { }, // Update
+            function (owner) { }
         ),
+		
+		module_search: create_module(
+		    function (owner) { owner.hmove = 0; },
+            function (owner) { idle_timer++}, // Update
+            function (owner) { idle_timer = 0; }
+		
+		),
 		
 		module_patrol: create_module(
 			function (owner) { owner.hmove = -1; }, // Init
             function (owner) {
 				if (place_meeting(owner.x + sign(owner.hmove), owner.y, obj_platform) || place_meeting(owner.x + sign(owner.hmove), owner.y, obj_patrol_ledge)){
-					owner.hmove *= -1;
-					show_debug_message("overlap");
+					if(hmove_changed || stuck){
+						stuck = true;	
+					}
+					else{
+						owner.xspd = 0;
+						owner.hmove *= -1;
+						show_debug_message(owner.hmove);
+					}
+				}
+				else{
+					stuck = false;
 				}
 			}, // Update
             function (owner) { 
@@ -23,7 +39,8 @@ function create_enemy_behaviors() {
 		),
 
         module_chase: create_module(
-            function (owner) {  }, // Init
+            function (owner) { owner.chasing = true;
+								handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);}, // Init
             function (owner) {
 				if(abs(player.x - owner.x) < 20){
 					owner.hmove = 0;
@@ -33,7 +50,10 @@ function create_enemy_behaviors() {
 				}
 				show_debug_message("chasing");
 				}, // Update
-            function (owner) { owner.hmove = 0;} // Exit
+            function (owner) { 
+				owner.chasing = false;
+				owner.hmove = 0;
+				handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);} // Exit
         ),
 		
 		module_alert_update: create_module(
@@ -66,7 +86,7 @@ function create_enemy_behaviors() {
 		module_update_vision_cone: create_module(
 			function(owner) {},
 			function(owner) { 
-				owner.vision_triangle.image_xscale *= sign(owner.image_xscale) == sign(owner.vision_triangle.image_xscale) ? 1 : -1 
+				owner.vision_triangle.image_xscale *= sign(owner.image_xscale) == -sign(owner.vision_triangle.image_xscale) ? 1 : -1 
 				owner.vision_triangle.x = owner.x - owner.vision_triangle.image_xscale * 0.5 * abs(owner.sprite_width);
 				owner.vision_triangle.y = owner.y - 0.5 * owner.sprite_height;
 				owner.vision_triangle.image_index = owner.sm.current_state;
@@ -337,6 +357,10 @@ function create_enemy_behaviors() {
 		            return true;
 		        }
 		    }
+        ),
+		
+        condition_idle_timered: create_condition(
+            function (owner) { return idle_timer > 2 * change_direction_interval; }
         ),
 		
     };

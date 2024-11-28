@@ -27,7 +27,7 @@ function create_state_machine(states) {
             for (var i = 0; i < array_length(transitions); i++) {
                 var transition = transitions[i];
                 if (transition.from == current_state && transition.condition.check(owner)) {
-                    // Transition to the next state
+                    // Transition to the next states
                     states[current_state]._exit(owner); // Exit current state
                     current_state = transition.to;          // Change state
 					states[current_state].init(owner); // Enter new state
