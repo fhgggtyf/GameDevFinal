@@ -34,5 +34,5 @@
     "path":"sprites/spr_portal/spr_portal.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
