@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -41,6 +41,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_door_handler","path":"objects/obj_door_handler/obj_door_handler.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
+    {"id":{"name":"obj_idle_vision_enemy","path":"objects/obj_idle_vision_enemy/obj_idle_vision_enemy.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"obj_lightsource","path":"objects/obj_lightsource/obj_lightsource.yy",},},
     {"id":{"name":"obj_patrol_ledge","path":"objects/obj_patrol_ledge/obj_patrol_ledge.yy",},},
