@@ -132,7 +132,7 @@ function create_enemy_behaviors() {
 		    function (owner) {
 		        with (owner.vision_triangle) {
 					if(owner.player.light_opened){
-						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, object_index, true, false)) {
+						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, self, true, false)) {
 						    return true;
 						}
 					}
@@ -249,7 +249,7 @@ function create_enemy_behaviors() {
 			function (owner) {
 		        with (owner.vision_triangle) {
 					if(owner.player.light_opened){
-						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, object_index, true, false)) {
+						if (collision_circle(owner.player.x, owner.player.y, owner.player.light_source.clear_rad, self, true, false)) {
 						    return false;
 						}
 					}
