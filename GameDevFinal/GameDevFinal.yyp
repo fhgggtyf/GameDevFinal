@@ -42,6 +42,7 @@
     {"id":{"name":"obj_door_handler","path":"objects/obj_door_handler/obj_door_handler.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_elevator","path":"objects/obj_elevator/obj_elevator.yy",},},
+    {"id":{"name":"obj_idle_no_turn_vision_enemy","path":"objects/obj_idle_no_turn_vision_enemy/obj_idle_no_turn_vision_enemy.yy",},},
     {"id":{"name":"obj_idle_vision_enemy","path":"objects/obj_idle_vision_enemy/obj_idle_vision_enemy.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},
     {"id":{"name":"obj_lightsource","path":"objects/obj_lightsource/obj_lightsource.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"obj_vision_cone","path":"objects/obj_vision_cone/obj_vision_cone.yy",},},
     {"id":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
     {"id":{"name":"GameLevel2","path":"rooms/GameLevel2/GameLevel2.yy",},},
+    {"id":{"name":"GameLevel3","path":"rooms/GameLevel3/GameLevel3.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Actions","path":"scripts/Actions/Actions.yy",},},
     {"id":{"name":"Conditions","path":"scripts/Conditions/Conditions.yy",},},
@@ -91,6 +93,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"GameLevel3","path":"rooms/GameLevel3/GameLevel3.yy",},},
     {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
     {"roomId":{"name":"GameLevel2","path":"rooms/GameLevel2/GameLevel2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

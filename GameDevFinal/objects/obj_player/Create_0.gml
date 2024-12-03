@@ -12,7 +12,7 @@ jump_str = 8;
 wall_xjump = 10;
 
 //mechanics
-max_jumps = 1;
+max_jumps = 2;
 
 noise = 500;
 

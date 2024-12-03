@@ -17,9 +17,7 @@ if (on_ground){
 //if the actor presses jump and has jumps available, jump
 if (jump_press and num_jumps > 0){
 	yspd = -jump_str;	
-	if (not on_ground){
-		num_jumps--;
-	}
+	num_jumps--;
 }
 
 
