@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-noise_multiplier = 1.2;
-slip = 1;
+event_inherited();
+
+slip = 0.1

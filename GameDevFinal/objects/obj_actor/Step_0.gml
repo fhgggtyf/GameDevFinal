@@ -13,6 +13,11 @@ if (on_ground){
 	alarm_set(0, coyote_time);
 	num_jumps = max_jumps;
 }
+else{
+	handle_collision_modifier(self, "SlipAccel", "accel", prev_platform_slip, calc_multiply, on_ground);
+	handle_collision_modifier(self, "SlipDccel", "decel", prev_platform_slip, calc_multiply, on_ground);
+	num_jumps -= (num_jumps >= max_jumps && max_jumps > 1) ? 1 : 0;
+}
 
 //if the actor presses jump and has jumps available, jump
 if (jump_press and num_jumps > 0){
@@ -51,7 +56,13 @@ yspd += grav;
 //apply movement, checking for collisions
 platform = move_collide();
 
+if(platform != -1){
+	prev_platform_slip = platform.slip;
+}
+
 if (on_ground and not was_grounded){
+	handle_collision_modifier(self, "SlipAccel", "accel", prev_platform_slip, calc_multiply, on_ground);
+	handle_collision_modifier(self, "SlipDccel", "decel", prev_platform_slip, calc_multiply, on_ground);
 	land();	
 }
 

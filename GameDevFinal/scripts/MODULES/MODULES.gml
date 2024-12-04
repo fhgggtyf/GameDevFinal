@@ -161,24 +161,21 @@ function create_enemy_behaviors() {
 					var midr = owner.player.midr;
 
 		            // Debug the bounding boxes
-		            show_debug_message("Vision Bounds: ax=" + string(ax) + ", ay_top=" + string(ay_top) + ", ay_bottom=" + string(ay_bottom));
-		            show_debug_message("Target Bounds: tx1=" + string(tx1) + ", ty1=" + string(ty1) + ", tx2=" + string(tx2) + ", ty2=" + string(ty2));
 
 		            // Bounding box overlap check
 		            if (image_xscale == 1) { // Default orientation
 		                if (tx2 < ax || tx1 > x || ty2 < ay_top || ty1 > ay_bottom) {
-		                    show_debug_message("Target is completely outside the vision cone (image_xscale == 1)");
+		                  
 		                    return false;
 		                }
 		            } else { // Flipped orientation
 		                if (tx1 > ax || tx2 < x || ty2 < ay_top || ty1 > ay_bottom) {
-		                    show_debug_message("Target is completely outside the flipped vision cone (image_xscale == -1)");
+		                
 		                    return false;
 		                }
 		            }
 
-		            show_debug_message("Bounding box overlap confirmed (Step 1 passed).");
-
+		          
 		            // Remaining steps (edge simplification and obstruction checks)...
 
 		            // 2. Simplify by checking edges
@@ -205,11 +202,9 @@ function create_enemy_behaviors() {
 		            }
 
 		            if (array_length(target_points) == 0) {
-		                show_debug_message("No points in the vision cone.");
+		             
 		                return false;
 		            }
-
-		            show_debug_message("Edge points confirmed: " + string(array_length(target_points)) + " points.");
 
 					// Vision cone dimensions
 					var length = abs(sprite_width) * abs(image_xscale);  // Account for horizontal scaling
@@ -233,13 +228,13 @@ function create_enemy_behaviors() {
 				        if (is_point_in_vision_cone(x, y, px, py, cone_angle, cone_direction)) {
 				            // Check for obstructions
 				            if (!collision_line(x, y, px, py, obj_platform, true, true)) {
-				                show_debug_message("Unobstructed point found in vision cone: (" + string(px) + ", " + string(py) + ")");
+				             
 				                return true;
 				            }
 				        }
 				    }
 
-		            show_debug_message("All points obstructed.");
+
 		            return false;
 		        }
 		    }

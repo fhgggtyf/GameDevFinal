@@ -11,6 +11,8 @@ accel= .2;
 decel = 0.2;
 
 hmove = -1;
+hmove_changed = false;
+stuck = false;
 
 grav_normal = .2;
 grav_neg = -.2;
@@ -29,7 +31,7 @@ player= instance_find(obj_player,0);
 eb = create_enemy_behaviors()
 
 // Create states
-idle_state = create_state([eb.module_idle]);
+idle_state = create_state([eb.module_patrol]);
 chase_state = create_state([eb.module_chase]);
 alarmed_state = create_state([eb.module_alert_update, eb.module_alert_bar_update]);
 

@@ -34,6 +34,7 @@ on_wall = false;
 was_grounded = false;
 
 platform = -1;
+prev_platform_slip = 1;
 
 modifiers=[];
 

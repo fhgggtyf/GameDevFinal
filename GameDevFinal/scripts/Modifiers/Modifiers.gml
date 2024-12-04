@@ -2,6 +2,10 @@ function calc_add(base, modifier_value) {
     return base + modifier_value;
 }
 
+function calc_add_high_prio(base, modifier_value) {
+    return base + modifier_value;
+}
+
 // Multiplicative calculation
 function calc_multiply(base, modifier_value) {
     return base * modifier_value;
@@ -21,8 +25,8 @@ function sort_modifiers(modifiers) {
     // Sort array based on calculation priority
     array_sort(modifiers, function(a, b) {
         // Define priorities: calc_multiply (0) is higher than calc_add (1)
-        var priority_a = (a.calculation == calc_multiply) ? 0 : 1;
-        var priority_b = (b.calculation == calc_multiply) ? 0 : 1;
+        var priority_a = (a.calculation == calc_add_high_prio) ? 0 : ((a.calculation == calc_multiply) ? 1 : 2);
+        var priority_b = (b.calculation == calc_add_high_prio) ? 0 : ((b.calculation == calc_multiply) ? 1 : 2);
 
         return priority_a - priority_b;
     });
@@ -60,7 +64,7 @@ function apply_collision_modifier(target, name, modifier, condition) {
             var _mod = target.modifiers[i];
             if (_mod.name == modifier.name) {
                 // Reverse the effect
-                if (_mod.calculation == calc_add) {
+                if (_mod.calculation == calc_add || _mod.calculation == calc_add_high_prio) {
                     var current_value = variable_instance_get(target, modifier.attribute);
                     var new_value = current_value - _mod.value;
                     variable_instance_set(target, modifier.attribute, new_value);

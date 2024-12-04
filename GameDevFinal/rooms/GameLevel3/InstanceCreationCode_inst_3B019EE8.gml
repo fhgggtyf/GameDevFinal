@@ -1,2 +1,1 @@
-decel = 0.05;
-accel = 0.05;
+sound_threshold = 330;
