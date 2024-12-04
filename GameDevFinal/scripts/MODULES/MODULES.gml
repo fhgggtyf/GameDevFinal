@@ -70,6 +70,17 @@ function create_enemy_behaviors() {
 			
 		),
 		
+		module_vision_alert_update: create_module(
+			function (owner) { },
+			function (owner) {  
+								
+							owner.alert_val += alert_speed * 10;
+								
+							},
+			function (owner) { owner.alert_val = 0; }
+			
+		),
+		
 		module_alert_bar_update: create_module(
 			function (owner) { alarm_bar = instance_create_layer(x, bbox_top - 15, "Instances", obj_temp_alarm_display);},
 			function (owner) {  alarm_bar.x = x;
