@@ -30,6 +30,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"my_text","filters":[],"listItems":[],"multiselect":false,"name":"my_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"A ROOFTOP DOOR OPENS. THE NOTE READS - 'I SWEAR, THE SKY'S GETTING DARKER EVERY DAY. IT'S LIKE THE SUN IS BECOMING WEAKER. THE AIR'S GETTING HARDER TO BREATHE, TOO, BUT NO ONE SEEMS TO BE LISTENING.'","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"key_num","filters":[],"listItems":[],"multiselect":false,"name":"key_num","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"remain_text","filters":[],"listItems":[],"multiselect":false,"name":"remain_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"INSERT NOTE TEXT HERE","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

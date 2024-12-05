@@ -1,1 +1,0 @@
-change_direction_interval = 220;
