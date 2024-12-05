@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -102,9 +102,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"GameLevel3","path":"rooms/GameLevel3/GameLevel3.yy",},},
     {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
     {"roomId":{"name":"GameLevel2","path":"rooms/GameLevel2/GameLevel2.yy",},},
+    {"roomId":{"name":"GameLevel3","path":"rooms/GameLevel3/GameLevel3.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
