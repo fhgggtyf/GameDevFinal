@@ -20,6 +20,11 @@ grav = grav_normal;
 change_direction_interval = 60;
 direction_time = 0;
 
+alert_val = 0;
+alert_speed = 0.05;        // Speed at which the bar fills
+decay_speed = 0.02;      // Speed at which the bar decays
+alert_threshold = 100;  // Threshold to trigger full alert
+
 chase_multiplier = 2;
 
 idle_timer = 0;
@@ -36,7 +41,7 @@ search_state = create_state([eb.module_search, eb.module_update_vision_cone, eb.
 chase_state = create_state([eb.module_chase, eb.module_update_vision_cone]);
 
 // Create state machine
-sm = create_state_machine([patrol_state, chase_state, search_state]);
+sm = create_state_machine([patrol_state, search_state, chase_state]);
 
 sm.add_transition(0, 1, eb.condition_scanned); 
 sm.add_transition(2, 1, eb.condition_scanned); 

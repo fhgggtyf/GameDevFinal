@@ -6,13 +6,13 @@ function create_enemy_behaviors() {
         // Modules
         module_idle: create_module(
             function (owner) { owner.hmove = 0; },
-            function (owner) { }, // Update
+            function (owner) { },
             function (owner) { }
         ),
 		
 		module_search: create_module(
 		    function (owner) { owner.hmove = 0; },
-            function (owner) { idle_timer++}, // Update
+            function (owner) { idle_timer++},
             function (owner) { idle_timer = 0; }
 		
 		),
@@ -74,7 +74,7 @@ function create_enemy_behaviors() {
 			function (owner) { },
 			function (owner) {  
 								
-							owner.alert_val += alert_speed * 10;
+							owner.alert_val += alert_speed * 40;
 								
 							},
 			function (owner) { owner.alert_val = 0; }
@@ -113,7 +113,7 @@ function create_enemy_behaviors() {
 									owner.direction_time = 0;
 								}
 							},
-			function(owner) {}	
+			function(owner) { owner.direction_time = 0;}	
 		),
 		
 		module_reset_alert_on_exit: create_module(
