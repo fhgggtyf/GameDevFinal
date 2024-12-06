@@ -1,10 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 hmove = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-jump_press = keyboard_check_pressed(ord("W"));
+jump_press = keyboard_check_pressed(ord("W")) && !place_meeting(x, y - 1, obj_elevator);
 sprinting = keyboard_check(vk_shift) && !injured;
-crouching = keyboard_check(ord("C"));
-if (crouching && sprinting) crouching = sprinting = false;
+if (keyboard_check_pressed(ord("C")) && !place_meeting(x, y - 1, obj_platform)) {
+	crouching = !crouching;
+}
+else {
+	if (keyboard_check_pressed(ord("C")) 
+	&& place_meeting(x, y - 1, obj_platform) && (crouching == false)) {
+		crouching = !crouching;
+	}
+	if (crouching && sprinting) { sprinting = false; }
+}
+
 
 top = bbox_top + (image_index == 1 ? 0.5 : 0) * sprite_height;
 bot=bbox_bottom;
