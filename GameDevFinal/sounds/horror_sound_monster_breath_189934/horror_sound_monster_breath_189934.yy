@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"horror_sound_monster_breath_189934.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.14,
 }

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"monster_appearing_sound_41450.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.12,
 }
