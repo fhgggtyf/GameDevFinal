@@ -43,10 +43,10 @@ chase_state = create_state([eb.module_chase, eb.module_update_vision_cone]);
 // Create state machine
 sm = create_state_machine([patrol_state, search_state, chase_state]);
 
-sm.add_transition(0, 1, eb.condition_scanned); 
-sm.add_transition(2, 1, eb.condition_scanned); 
-sm.add_transition(1, 2, eb.condition_not_scanned);  
-sm.add_transition(2, 0, eb.condition_idle_timered);  
+sm.add_transition(0, 2, eb.condition_scanned); 
+sm.add_transition(1, 2, eb.condition_scanned); 
+sm.add_transition(2, 1, eb.condition_not_scanned);  
+sm.add_transition(1, 0, eb.condition_idle_timered);  
 
 // Initialize state machine
 sm.init(0, self); // Start in idle state
