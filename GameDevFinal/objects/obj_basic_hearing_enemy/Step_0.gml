@@ -11,3 +11,6 @@ if (!first_detect && alert_val > alert_threshold) {
 		audio_play_sound_at(monster_appearing_sound_41450, x, y, 0, 100, 600, 1, false, 1);
 	}
 }
+if (alert_val <= 0) {
+	first_detect = false;
+}
