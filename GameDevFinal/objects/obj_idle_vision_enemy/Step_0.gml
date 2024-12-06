@@ -8,14 +8,10 @@ event_inherited();
 
 prev_hmove = hmove;
 
-if (!first_detect && alert_val > alert_threshold) {
-	first_detect = true;
-	if (first_detect) {
-		audio_play_sound_at(horror_sound_monster_breath_189934, x, y, 0, 100, 600, 1, false, 1);
-	}
-}
-if (alert_val <= 0) {
-	first_detect = false;
-}
-
+//if (eb.condition_scanned.check && !first_detect) {
+//	first_detect = true;
+//	if (first_detect) {
+//		audio_play_sound_at(horror_sound_monster_breath_189934, x, y, 0, 100, 600, 1, false, 1);
+//	}
+//}
 

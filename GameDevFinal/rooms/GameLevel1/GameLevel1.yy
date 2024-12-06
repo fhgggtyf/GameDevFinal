@@ -97,6 +97,7 @@
     {"name":"inst_7742649C","path":"rooms/GameLevel1/GameLevel1.yy",},
     {"name":"inst_25F6639D","path":"rooms/GameLevel1/GameLevel1.yy",},
     {"name":"inst_21CCDE54","path":"rooms/GameLevel1/GameLevel1.yy",},
+    {"name":"inst_7243D8DC","path":"rooms/GameLevel1/GameLevel1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -211,6 +212,7 @@
         {"$GMRInstance":"v1","%Name":"inst_7742649C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7742649C","objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":2176.0,},
         {"$GMRInstance":"v1","%Name":"inst_25F6639D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25F6639D","objectId":{"name":"obj_bgm_manager","path":"objects/obj_bgm_manager/obj_bgm_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4512.0,"y":1184.0,},
         {"$GMRInstance":"v1","%Name":"inst_21CCDE54","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21CCDE54","objectId":{"name":"obj_idle_vision_enemy","path":"objects/obj_idle_vision_enemy/obj_idle_vision_enemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2976.0,"y":2336.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7243D8DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7243D8DC","objectId":{"name":"obj_door_handler","path":"objects/obj_door_handler/obj_door_handler.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":480.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":-800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"gamefinalbackground","path":"sprites/gamefinalbackground/gamefinalbackground.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

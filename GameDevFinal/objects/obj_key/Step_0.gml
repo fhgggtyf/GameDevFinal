@@ -18,8 +18,13 @@
 //	}
 //}
 
-if (place_meeting(x, y, obj_player)) {
+if (place_meeting(x, y, obj_player) && !played_sound) {
+	played_sound = true;
+	audio_play_sound(door_click, 1, false);
+}
+if (place_meeting(x, y, obj_player) || global.door_list[key_num]) {
 	instance_destroy();
 }
+
 
 //A [LOCATION] DOOR OPENS. THE NOTE READS - ''

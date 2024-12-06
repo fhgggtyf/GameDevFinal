@@ -21,7 +21,7 @@ change_direction_interval = 60;
 direction_time = 0;
 
 alert_val = 0;
-alert_speed = 0.05;        // Speed at which the bar fills
+alert_speed = 0.1;        // Speed at which the bar fills
 decay_speed = 0.02;      // Speed at which the bar decays
 alert_threshold = 100;  // Threshold to trigger full alert
 
