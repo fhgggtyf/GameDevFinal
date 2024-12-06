@@ -50,3 +50,4 @@ sm.add_transition(1, 0, eb.condition_not_scanned);
 
 // Initialize state machine
 sm.init(0, self); // Start in idle state
+first_detect = false;

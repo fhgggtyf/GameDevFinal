@@ -43,3 +43,5 @@ sm.add_transition(2, 1, eb.condition_player_noise_not_heard);
 
 // Initialize state machine
 sm.init(0, self); // Start in idle state
+
+first_detect = false;

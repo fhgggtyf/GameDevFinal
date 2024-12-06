@@ -78,6 +78,8 @@
     {"id":{"name":"gradient_shader","path":"shaders/gradient_shader/gradient_shader.yy",},},
     {"id":{"name":"door_click","path":"sounds/door_click/door_click.yy",},},
     {"id":{"name":"horror_background_atmosphere_156462","path":"sounds/horror_background_atmosphere_156462/horror_background_atmosphere_156462.yy",},},
+    {"id":{"name":"horror_sound_monster_breath_189934","path":"sounds/horror_sound_monster_breath_189934/horror_sound_monster_breath_189934.yy",},},
+    {"id":{"name":"monster_appearing_sound_41450","path":"sounds/monster_appearing_sound_41450/monster_appearing_sound_41450.yy",},},
     {"id":{"name":"gamefinalbackground","path":"sprites/gamefinalbackground/gamefinalbackground.yy",},},
     {"id":{"name":"KEYNOTEFINAL","path":"sprites/KEYNOTEFINAL/KEYNOTEFINAL.yy",},},
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
