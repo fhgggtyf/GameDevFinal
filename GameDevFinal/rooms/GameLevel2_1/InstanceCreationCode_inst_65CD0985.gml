@@ -1,1 +1,1 @@
-spr = spr_keyplusnote;
+sprite_index = spr_keyplusnote;

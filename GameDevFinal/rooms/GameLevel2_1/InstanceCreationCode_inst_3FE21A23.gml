@@ -1,2 +1,2 @@
 visible = true;
-spr = Sprite21;
+sprite_index = Sprite21;
