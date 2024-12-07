@@ -3,4 +3,4 @@
 
 var inst = instance_create_layer(x, y, "Instances", obj_readable_remainder);
 inst.created = noone;
-inst.my_text = "A medkit...";
+inst.my_text = "A medkit! I'm healed!";
