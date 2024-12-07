@@ -1,4 +1,4 @@
-mspd = 20;
+mspd = 12;
 accel = 0.2;
 decel = 0.2;
 
