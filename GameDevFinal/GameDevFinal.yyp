@@ -42,6 +42,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_challenge","path":"objects/obj_challenge/obj_challenge.yy",},},
     {"id":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},},
+    {"id":{"name":"obj_contentmenu","path":"objects/obj_contentmenu/obj_contentmenu.yy",},},
     {"id":{"name":"obj_door_1","path":"objects/obj_door_1/obj_door_1.yy",},},
     {"id":{"name":"obj_door_handler","path":"objects/obj_door_handler/obj_door_handler.yy",},},
     {"id":{"name":"obj_door_indicator","path":"objects/obj_door_indicator/obj_door_indicator.yy",},},
@@ -78,6 +79,7 @@
     {"id":{"name":"obj_textbox_commander","path":"objects/obj_textbox_commander/obj_textbox_commander.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_vision_cone","path":"objects/obj_vision_cone/obj_vision_cone.yy",},},
+    {"id":{"name":"ContentWarning","path":"rooms/ContentWarning/ContentWarning.yy",},},
     {"id":{"name":"EndMenu","path":"rooms/EndMenu/EndMenu.yy",},},
     {"id":{"name":"GameLevel1_P","path":"rooms/GameLevel1_P/GameLevel1_P.yy",},},
     {"id":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
@@ -142,6 +144,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"ContentWarning","path":"rooms/ContentWarning/ContentWarning.yy",},},
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"GameLevel1","path":"rooms/GameLevel1/GameLevel1.yy",},},
     {"roomId":{"name":"GameLevel2","path":"rooms/GameLevel2/GameLevel2.yy",},},
