@@ -75,6 +75,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Actions","path":"scripts/Actions/Actions.yy",},},
     {"id":{"name":"Conditions","path":"scripts/Conditions/Conditions.yy",},},
+    {"id":{"name":"Helpers","path":"scripts/Helpers/Helpers.yy",},},
     {"id":{"name":"Modifiers","path":"scripts/Modifiers/Modifiers.yy",},},
     {"id":{"name":"MODULES","path":"scripts/MODULES/MODULES.yy",},},
     {"id":{"name":"Movement","path":"scripts/Movement/Movement.yy",},},
