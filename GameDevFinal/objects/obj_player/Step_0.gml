@@ -27,8 +27,31 @@ handle_collision_modifier(self, "SprintAccel", "accel", 1.5, calc_multiply, spri
 handle_collision_modifier(self, "SprintDecel", "decel", 1.2, calc_multiply, sprinting);
 
 handle_collision_modifier(self, "CrouchSpeed", "mspd", 0.5, calc_multiply, crouching);
-handle_collision_modifier(self, "CrouchIndex", "image_index", 1, calc_add, crouching);
-
+if(crouching){
+	if(moving){
+		image_speed = 1;
+		sprite_index = spr_player_crouch;
+	}
+	else{
+		image_speed = 1;
+		sprite_index = spr_player_crouch_idle;
+	}
+}
+else{
+	if(!moving){
+		image_speed = 1;
+		sprite_index = spr_player_idle;
+	}
+	else{
+	sprite_index = spr_player_run;
+		if(sprinting){
+			image_speed = 1.5;
+		}
+		else{
+			image_speed = 1;
+		}
+	}
+}
 handle_collision_modifier(self, "InjureJumpNum", "max_jumps", -1, calc_add, injured);
 
 //do actions (see obj_actor)

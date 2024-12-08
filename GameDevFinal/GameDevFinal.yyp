@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -41,6 +41,7 @@
     {"id":{"name":"obj_bgm_manager","path":"objects/obj_bgm_manager/obj_bgm_manager.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_door_handler","path":"objects/obj_door_handler/obj_door_handler.yy",},},
+    {"id":{"name":"obj_door_indicator","path":"objects/obj_door_indicator/obj_door_indicator.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_elevator","path":"objects/obj_elevator/obj_elevator.yy",},},
     {"id":{"name":"obj_idle_no_turn_vision_enemy","path":"objects/obj_idle_no_turn_vision_enemy/obj_idle_no_turn_vision_enemy.yy",},},
@@ -94,7 +95,10 @@
     {"id":{"name":"spr_keyplusnote","path":"sprites/spr_keyplusnote/spr_keyplusnote.yy",},},
     {"id":{"name":"spr_patrol_ledge","path":"sprites/spr_patrol_ledge/spr_patrol_ledge.yy",},},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_player_crouch_idle","path":"sprites/spr_player_crouch_idle/spr_player_crouch_idle.yy",},},
+    {"id":{"name":"spr_player_crouch","path":"sprites/spr_player_crouch/spr_player_crouch.yy",},},
+    {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},},
     {"id":{"name":"spr_portal","path":"sprites/spr_portal/spr_portal.yy",},},
     {"id":{"name":"spr_read_interact","path":"sprites/spr_read_interact/spr_read_interact.yy",},},
     {"id":{"name":"spr_read_tutorial","path":"sprites/spr_read_tutorial/spr_read_tutorial.yy",},},
