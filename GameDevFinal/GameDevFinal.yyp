@@ -88,6 +88,7 @@
     {"id":{"name":"monster_appearing_sound_41450","path":"sounds/monster_appearing_sound_41450/monster_appearing_sound_41450.yy",},},
     {"id":{"name":"gamefinalbackground","path":"sprites/gamefinalbackground/gamefinalbackground.yy",},},
     {"id":{"name":"KEYNOTEFINAL","path":"sprites/KEYNOTEFINAL/KEYNOTEFINAL.yy",},},
+    {"id":{"name":"New_Piskel_1_png","path":"sprites/New_Piskel_1_png/New_Piskel_1_png.yy",},},
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
     {"id":{"name":"spr_basic_vision_enemy","path":"sprites/spr_basic_vision_enemy/spr_basic_vision_enemy.yy",},},
     {"id":{"name":"spr_basic","path":"sprites/spr_basic/spr_basic.yy",},},

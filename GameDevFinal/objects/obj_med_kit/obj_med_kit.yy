@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite20",
-    "path":"sprites/Sprite20/Sprite20.yy",
+    "name":"New_Piskel_1_png",
+    "path":"sprites/New_Piskel_1_png/New_Piskel_1_png.yy",
   },
   "spriteMaskId":null,
   "visible":true,
