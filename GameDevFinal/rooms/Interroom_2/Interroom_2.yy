@@ -1,0 +1,93 @@
+{
+  "$GMRoom":"v1",
+  "%Name":"Interroom_2",
+  "creationCodeFile":"",
+  "inheritCode":false,
+  "inheritCreationOrder":false,
+  "inheritLayers":false,
+  "instanceCreationOrder":[
+    {"name":"inst_341E63B8","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_686E8C7E","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_85BD0FB","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_452E963D","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_4FF0C41E","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_7E71DC","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_764C5677","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_5523661C","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_1A6269A0","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_5DE604F9","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_4E054AB2","path":"rooms/Interroom_2/Interroom_2.yy",},
+  ],
+  "isDnd":false,
+  "layers":[
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_341E63B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_341E63B8","objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":1.0,"x":0.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4E054AB2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E054AB2","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":480.0,},
+        {"$GMRInstance":"v1","%Name":"inst_686E8C7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_686E8C7E","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_85BD0FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_85BD0FB","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*PANTS* COMMANDER! I HAVE THE EVIDENCE! THEY ARE NOT REFERING TO THE PROTOCAL AT ALL!",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_452E963D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_452E963D","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*SIGNS* SOLDIER... I ALWAYS LIKED YOU. WHY DOES IT HAVE TO COME TO THIS?",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4FF0C41E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4FF0C41E","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*CONFUSED* WHA... WHAT ARE YOU TALKING ABOUT, COMMANDER? I GOT THE EVIDENCE, JUST AS YOU ASKED!",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7E71DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E71DC","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*LOOKS UP* ARE YOU SURE THAT'S WHAT I ASKED FOR? I TOLD YOU HE HAS FRIENDS IN THE COUNSIL, IT TURNS OUT - I AM ONE OF THEM. IF YOU DIDN'T MAKE THAT CHOICE I WOULD HAVE LET YOU GO.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_764C5677","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_764C5677","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"WHAT A PITY... THE PLACE SHOULD HAVE KILLED YOU BUT YET HERE YOU ARE, STANDING IN MY OFFICE WITH EVIDENCE. SUCH A PITY, A GOOD SOLDIER AND SCHOLAR NEEDS TO DIE BECAUSE HE KNOWS TOO MUCH...",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5523661C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5523661C","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*SPEECHLESS* WHAT... HOW IS THIS POSSIBLE?",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1A6269A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A6269A0","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*LOADS UP A PISTOL* GOODBYE SON. I AM TRULY SORRY.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5DE604F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DE604F9","objectId":{"name":"obj_portal_directed","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portal_directed","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"propertyId":{"name":"_room","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"resource":{"name":"EndMenu","path":"rooms/EndMenu/EndMenu.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"EndMenu",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":10.0,"x":1248.0,"y":32.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+  ],
+  "name":"Interroom_2",
+  "parent":{
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
+  },
+  "parentRoom":null,
+  "physicsSettings":{
+    "inheritPhysicsSettings":false,
+    "PhysicsWorld":false,
+    "PhysicsWorldGravityX":0.0,
+    "PhysicsWorldGravityY":10.0,
+    "PhysicsWorldPixToMetres":0.1,
+  },
+  "resourceType":"GMRoom",
+  "resourceVersion":"2.0",
+  "roomSettings":{
+    "Height":768,
+    "inheritRoomSettings":false,
+    "persistent":false,
+    "Width":1366,
+  },
+  "sequenceId":null,
+  "views":[
+    {"hborder":400,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"vborder":400,"visible":true,"vspeed":-1,"wport":1024,"wview":1024,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings":{
+    "clearDisplayBuffer":true,
+    "clearViewBackground":false,
+    "enableViews":true,
+    "inheritViewSettings":false,
+  },
+  "volume":1.0,
+}

@@ -9,6 +9,6 @@ if (room == MainMenu) {
 
 if (room == EndMenu) {
 	if (keyboard_check_pressed(vk_anykey)) {
-		room_goto(MainMenu);
+		room_goto(GameLevel1);
 	}
 }

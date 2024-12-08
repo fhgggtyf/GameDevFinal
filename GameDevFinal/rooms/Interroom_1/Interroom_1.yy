@@ -1,0 +1,93 @@
+{
+  "$GMRoom":"v1",
+  "%Name":"Interroom_1",
+  "creationCodeFile":"",
+  "inheritCode":false,
+  "inheritCreationOrder":false,
+  "inheritLayers":false,
+  "instanceCreationOrder":[
+    {"name":"inst_40E0F0BC","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_27881E08","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_22D76C22","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_9C5E35A","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_1420C147","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_5FEADE5F","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_7289CBDC","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_6E992E9A","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_12E124F0","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_6F3E8608","path":"rooms/Interroom_1/Interroom_1.yy",},
+    {"name":"inst_484F5EA6","path":"rooms/Interroom_1/Interroom_1.yy",},
+  ],
+  "isDnd":false,
+  "layers":[
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_484F5EA6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_484F5EA6","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":512.0,},
+        {"$GMRInstance":"v1","%Name":"inst_40E0F0BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40E0F0BC","objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":1.0,"x":0.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_27881E08","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27881E08","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_22D76C22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22D76C22","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*PANTS* COMMANDER! THERE IS SOMETHING I NEED TO REPORT!",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_9C5E35A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9C5E35A","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*STARTLED, THEN SURPRISED* WHERE YOU'VE BEEN? WE THOUGHT YOU WERE DEAD.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1420C147","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1420C147","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"I'VE BEEN TAKEN HOSTAGE BY THE OFFICERS IN CHARGE OF PROJ. APOCALYSPE. THEIR RESEARCH DIRECTION IS OFF TRACK!",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5FEADE5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5FEADE5F","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*THINKS* I KNOW THE HEAD OF THAT PROJECT, HE'S GOT MANY FRIENDS IN THE COUNSIL. YOU WILL NEED EVIDENCE.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7289CBDC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7289CBDC","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"IF YOU INSIST, I COULD SEND YOU BACK TO THE DAY YOU ESCAPED. YOU CAN FOCUS ON GATHERING EVIDENCE IF YOU WISH.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6E992E9A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E992E9A","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"IF THAT'S WHAT IT TAKES. I'VE BEEN TORTURED WAY TOO LONG...",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_12E124F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12E124F0","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable_commander","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable_commander/obj_readable_commander.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"*SIGNS* BE CAREFUL SOLDIER. IF EVIDENCE IS CLEAR, THE PROJECT WILL BE ABORTED.",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6F3E8608","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F3E8608","objectId":{"name":"obj_portal_directed","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portal_directed","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"propertyId":{"name":"_room","path":"objects/obj_portal_directed/obj_portal_directed.yy",},"resource":{"name":"GameLevel1_P","path":"rooms/GameLevel1_P/GameLevel1_P.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"GameLevel1_P",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":10.0,"x":1248.0,"y":32.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+  ],
+  "name":"Interroom_1",
+  "parent":{
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
+  },
+  "parentRoom":null,
+  "physicsSettings":{
+    "inheritPhysicsSettings":false,
+    "PhysicsWorld":false,
+    "PhysicsWorldGravityX":0.0,
+    "PhysicsWorldGravityY":10.0,
+    "PhysicsWorldPixToMetres":0.1,
+  },
+  "resourceType":"GMRoom",
+  "resourceVersion":"2.0",
+  "roomSettings":{
+    "Height":768,
+    "inheritRoomSettings":false,
+    "persistent":false,
+    "Width":1366,
+  },
+  "sequenceId":null,
+  "views":[
+    {"hborder":400,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"vborder":400,"visible":true,"vspeed":-1,"wport":1024,"wview":1024,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+  ],
+  "viewSettings":{
+    "clearDisplayBuffer":true,
+    "clearViewBackground":false,
+    "enableViews":true,
+    "inheritViewSettings":false,
+  },
+  "volume":1.0,
+}
