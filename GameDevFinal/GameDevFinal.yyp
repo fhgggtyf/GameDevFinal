@@ -108,6 +108,7 @@
     {"id":{"name":"Checkpoint","path":"sounds/Checkpoint/Checkpoint.yy",},},
     {"id":{"name":"door_click","path":"sounds/door_click/door_click.yy",},},
     {"id":{"name":"factory_fluorescent_light_buzz_6871","path":"sounds/factory_fluorescent_light_buzz_6871/factory_fluorescent_light_buzz_6871.yy",},},
+    {"id":{"name":"glass_shatter","path":"sounds/glass_shatter/glass_shatter.yy",},},
     {"id":{"name":"horror_background_atmosphere_156462","path":"sounds/horror_background_atmosphere_156462/horror_background_atmosphere_156462.yy",},},
     {"id":{"name":"horror_sound_monster_breath_189934","path":"sounds/horror_sound_monster_breath_189934/horror_sound_monster_breath_189934.yy",},},
     {"id":{"name":"monster_appearing_sound_41450","path":"sounds/monster_appearing_sound_41450/monster_appearing_sound_41450.yy",},},
