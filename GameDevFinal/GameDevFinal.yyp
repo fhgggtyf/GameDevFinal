@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"GameDevFinal",
   "resources":[
@@ -105,6 +105,7 @@
     {"id":{"name":"StateMachines","path":"scripts/StateMachines/StateMachines.yy",},},
     {"id":{"name":"States","path":"scripts/States/States.yy",},},
     {"id":{"name":"gradient_shader","path":"shaders/gradient_shader/gradient_shader.yy",},},
+    {"id":{"name":"Checkpoint","path":"sounds/Checkpoint/Checkpoint.yy",},},
     {"id":{"name":"door_click","path":"sounds/door_click/door_click.yy",},},
     {"id":{"name":"factory_fluorescent_light_buzz_6871","path":"sounds/factory_fluorescent_light_buzz_6871/factory_fluorescent_light_buzz_6871.yy",},},
     {"id":{"name":"horror_background_atmosphere_156462","path":"sounds/horror_background_atmosphere_156462/horror_background_atmosphere_156462.yy",},},

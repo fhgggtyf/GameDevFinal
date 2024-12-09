@@ -40,7 +40,17 @@ function create_enemy_behaviors() {
 
         module_chase: create_module(
             function (owner) { owner.chasing = true;
-								handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);}, // Init
+								handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);
+								
+								if (!variable_instance_exists(owner, "sound_id")) {
+								    owner.sound_id = -1; 
+								}
+
+								if (owner.sound_id == -1 || !audio_is_playing(owner.sound_id)) {
+							
+								    owner.sound_id = audio_play_sound_at(monster_appearing_sound_41450, owner.x,owner.y, 0, 100, 600, 1, false, 1);
+								}
+								}, 
             function (owner) {
 				if(abs(player.x - owner.x) < 20){
 					owner.hmove = 0;

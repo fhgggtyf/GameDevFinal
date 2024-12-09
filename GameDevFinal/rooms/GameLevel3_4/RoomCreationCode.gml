@@ -1,0 +1,1 @@
+audio_play_sound(Checkpoint,1,false);

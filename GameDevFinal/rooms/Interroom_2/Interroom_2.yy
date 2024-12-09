@@ -18,6 +18,7 @@
     {"name":"inst_5DE604F9","path":"rooms/Interroom_2/Interroom_2.yy",},
     {"name":"inst_4E054AB2","path":"rooms/Interroom_2/Interroom_2.yy",},
     {"name":"inst_6030F96C","path":"rooms/Interroom_2/Interroom_2.yy",},
+    {"name":"inst_4B55E1E2","path":"rooms/Interroom_2/Interroom_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -52,6 +53,7 @@
         {"$GMRInstance":"v1","%Name":"inst_6030F96C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6030F96C","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_readable","path":"objects/obj_readable/obj_readable.yy",},"propertyId":{"name":"my_text","path":"objects/obj_readable/obj_readable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"THE LAST THING I HEAR IS THE GUN. THE LAST FEELING I FEEL IS PANIC, THEN A SHARP PAIN-",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4B55E1E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B55E1E2","objectId":{"name":"obj_shader_controller","path":"objects/obj_shader_controller/obj_shader_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":320.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
