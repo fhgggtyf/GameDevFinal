@@ -1,0 +1,1 @@
+global.manager_key_obtained = false;

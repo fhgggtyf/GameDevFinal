@@ -45,16 +45,18 @@ if (shader_opened) {
     shader_set_uniform_i(shader_get_uniform(gradient_shader, "u_num_lights"), num_lights);
 
     // Pass the light data
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_centers"), centers);
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_clear_rads"), clear_rads);
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_dim_rads"), dim_rads);
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_directions"), directions);
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_angles"), angles);
+	if(num_lights > 0){
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_centers"), centers);
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_clear_rads"), clear_rads);
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_dim_rads"), dim_rads);
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_directions"), directions);
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_angles"), angles);
 
-    // Pass environment properties
-    shader_set_uniform_f(shader_get_uniform(gradient_shader, "u_alpha_env"), 1.0); // Base alpha for the environment
-    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_env_color"), [0.0, 0.0, 0.0, 1.0]); // Environment color
+	    // Pass environment properties
+	    shader_set_uniform_f(shader_get_uniform(gradient_shader, "u_alpha_env"), 1.0); // Base alpha for the environment
+	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_env_color"), [0.0, 0.0, 0.0, 1.0]); // Environment color
 
+	}
     // Trigger the shader by drawing a rectangle
     draw_rectangle(0, 0, room_width, room_height, false);
 

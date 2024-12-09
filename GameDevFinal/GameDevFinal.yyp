@@ -120,6 +120,7 @@
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
     {"id":{"name":"spr_basic_vision_enemy","path":"sprites/spr_basic_vision_enemy/spr_basic_vision_enemy.yy",},},
     {"id":{"name":"spr_basic","path":"sprites/spr_basic/spr_basic.yy",},},
+    {"id":{"name":"spr_checkpoints","path":"sprites/spr_checkpoints/spr_checkpoints.yy",},},
     {"id":{"name":"spr_faster","path":"sprites/spr_faster/spr_faster.yy",},},
     {"id":{"name":"spr_ice","path":"sprites/spr_ice/spr_ice.yy",},},
     {"id":{"name":"spr_keyplusnote","path":"sprites/spr_keyplusnote/spr_keyplusnote.yy",},},

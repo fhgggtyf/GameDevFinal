@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite21",
-    "path":"sprites/Sprite21/Sprite21.yy",
+    "name":"spr_checkpoints",
+    "path":"sprites/spr_checkpoints/spr_checkpoints.yy",
   },
   "spriteMaskId":null,
   "visible":true,
