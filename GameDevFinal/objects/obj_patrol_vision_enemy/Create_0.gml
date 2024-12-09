@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-// Inherit the parent event
-
 event_inherited();
 
 mspd = 3;
@@ -21,9 +19,9 @@ change_direction_interval = 60;
 direction_time = 0;
 
 alert_val = 0;
-alert_speed = 0.05;        // Speed at which the bar fills
-decay_speed = 0.02;      // Speed at which the bar decays
-alert_threshold = 100;  // Threshold to trigger full alert
+alert_speed = 0.05;       
+decay_speed = 0.02;     
+alert_threshold = 100;  
 
 chase_multiplier = 2;
 
@@ -49,4 +47,4 @@ sm.add_transition(2, 1, eb.condition_not_scanned);
 sm.add_transition(1, 0, eb.condition_idle_timered);  
 
 // Initialize state machine
-sm.init(0, self); // Start in idle state
+sm.init(0, self); 

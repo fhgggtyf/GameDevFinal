@@ -6,7 +6,6 @@ function calc_add_high_prio(base, modifier_value) {
     return base + modifier_value;
 }
 
-// Multiplicative calculation
 function calc_multiply(base, modifier_value) {
     return base * modifier_value;
 }
@@ -14,17 +13,14 @@ function calc_multiply(base, modifier_value) {
 function create_modifier(name, attribute, value, calculation) {
     return {
         name: name,
-        attribute: attribute,  // Attribute to modify (e.g., "attack")
-        value: value,          // Modification value (can be positive or negative)
-        calculation: calculation, // Calculation function (e.g., add, multiply)
+        attribute: attribute,  // Attribute to modify
+        value: value,          // Modification value
+        calculation: calculation, // Calculation function
     };
 }
 
-// Sort modifiers by logical priority
 function sort_modifiers(modifiers) {
-    // Sort array based on calculation priority
     array_sort(modifiers, function(a, b) {
-        // Define priorities: calc_multiply (0) is higher than calc_add (1)
         var priority_a = (a.calculation == calc_add_high_prio) ? 0 : ((a.calculation == calc_multiply) ? 1 : 2);
         var priority_b = (b.calculation == calc_add_high_prio) ? 0 : ((b.calculation == calc_multiply) ? 1 : 2);
 
@@ -34,9 +30,7 @@ function sort_modifiers(modifiers) {
 
 
 function apply_collision_modifier(target, name, modifier, condition) {
-    // Check if the target is colliding with the specified object
     if (condition) {
-        // Apply the modifier only if it's not already active
         var exists = false;
         for (var i = 0; i < array_length(target.modifiers); i++) {
             if (target.modifiers[i].name == modifier.name) {
@@ -45,25 +39,19 @@ function apply_collision_modifier(target, name, modifier, condition) {
             }
         }
         if (!exists) {
-            // Get the current value dynamically
             var current_value = variable_instance_get(target, modifier.attribute);
 
-            // Calculate the new value using the modifier's calculation method
             var new_value = modifier.calculation(current_value, modifier.value);
 
-            // Set the new value dynamically
             variable_instance_set(target, modifier.attribute, new_value);
             array_push(target.modifiers, modifier);
 
-            // Sort modifiers after adding a new one
             sort_modifiers(target.modifiers);
         }
     } else {
-        // Remove the modifier if it's no longer touching
         for (var i = array_length(target.modifiers) - 1; i >= 0; i--) {
             var _mod = target.modifiers[i];
             if (_mod.name == modifier.name) {
-                // Reverse the effect
                 if (_mod.calculation == calc_add || _mod.calculation == calc_add_high_prio) {
                     var current_value = variable_instance_get(target, modifier.attribute);
                     var new_value = current_value - _mod.value;
@@ -75,7 +63,6 @@ function apply_collision_modifier(target, name, modifier, condition) {
                 }
                 array_delete(target.modifiers, i, 1);
 
-                // Sort modifiers after removing one
                 sort_modifiers(target.modifiers);
             }
         }

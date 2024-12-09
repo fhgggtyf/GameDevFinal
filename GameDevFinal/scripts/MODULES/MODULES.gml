@@ -18,7 +18,7 @@ function create_enemy_behaviors() {
 		),
 		
 		module_patrol: create_module(
-			function (owner) { owner.hmove = -1; }, // Init
+			function (owner) { owner.hmove = -1; }, 
             function (owner) {
 				if (place_meeting(owner.x + sign(owner.hmove), owner.y, obj_platform) || place_meeting(owner.x + sign(owner.hmove), owner.y, obj_patrol_ledge)){
 					if(hmove_changed || stuck){
@@ -27,15 +27,14 @@ function create_enemy_behaviors() {
 					else{
 						owner.xspd = 0;
 						owner.hmove *= -1;
-						show_debug_message(owner.hmove);
 					}
 				}
 				else{
 					stuck = false;
 				}
-			}, // Update
+			}, 
             function (owner) { 
-				owner.hmove = 0;} // Exit
+				owner.hmove = 0;} 
 		),
 
         module_chase: create_module(
@@ -58,12 +57,11 @@ function create_enemy_behaviors() {
 				else{
 					owner.hmove = 3 * sign(player.x - owner.x);
 				}
-				show_debug_message("chasing");
-				}, // Update
+				}, 
             function (owner) { 
 				owner.chasing = false;
 				owner.hmove = 0;
-				handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);} // Exit
+				handle_collision_modifier(self, "ChaseAccel", "mspd", chase_multiplier, calc_multiply, chasing);}
         ),
 		
 		module_alert_update: create_module(
@@ -158,22 +156,21 @@ function create_enemy_behaviors() {
 						}
 					}
 					
-		            // Vision triangle bounding box setup
+		           
 		            var ax, ay_top, ay_bottom, ay;
 		            if (image_xscale == 1) {
-		                ax = bbox_left; // Vision cone's farthest left edge
+		                ax = bbox_left; 
 		                ay_top = bbox_top;
 		                ay_bottom = bbox_bottom;
 						ay = y;
-		            } else { // image_xscale == -1
-		                ax = bbox_right; // Vision cone's farthest right edge (flipped)
+		            } else { 
+		                ax = bbox_right; 
 		                ay_top = bbox_top;
 		                ay_bottom = bbox_bottom;
 						ay = y;
 		            }   
 
 		
-		            // Target bounding box
 		            var tx1 = owner.player.left;
 		            var ty1 = owner.player.top;
 		            var tx2 = owner.player.right;
@@ -181,15 +178,12 @@ function create_enemy_behaviors() {
 					var midl = owner.player.midl;
 					var midr = owner.player.midr;
 
-		            // Debug the bounding boxes
-
-		            // Bounding box overlap check
-		            if (image_xscale == 1) { // Default orientation
+		            if (image_xscale == 1) { 
 		                if (tx2 < ax || tx1 > x || ty2 < ay_top || ty1 > ay_bottom) {
 		                  
 		                    return false;
 		                }
-		            } else { // Flipped orientation
+		            } else { 
 		                if (tx1 > ax || tx2 < x || ty2 < ay_top || ty1 > ay_bottom) {
 		                
 		                    return false;
@@ -197,9 +191,6 @@ function create_enemy_behaviors() {
 		            }
 
 		          
-		            // Remaining steps (edge simplification and obstruction checks)...
-
-		            // 2. Simplify by checking edges
 		            var target_points = [midl, midr];
 
 		            if (ty1 <= ay_bottom && ty1 >= ay_top) {
@@ -227,27 +218,19 @@ function create_enemy_behaviors() {
 		                return false;
 		            }
 
-					// Vision cone dimensions
-					var length = abs(sprite_width) * abs(image_xscale);  // Account for horizontal scaling
-					var height = abs(sprite_height) * abs(image_yscale); // Full height of the vision cone
-
-					// Calculate half-angle of the cone
+					var length = abs(sprite_width) * abs(image_xscale);  
+					var height = abs(sprite_height) * abs(image_yscale); 
 					var half_angle = radtodeg(arctan((0.5 * height) / length));
 
-					// Calculate full angle of the vision cone
 					var full_angle = 2 * half_angle;
 					
-					var cone_direction = 90 + image_xscale * 90; // Direction the object is facing
+					var cone_direction = 90 + image_xscale * 90; 
 					var cone_angle = full_angle;
-
-		            // 3. Obstruction check
 					for (var i = 0; i < array_length(target_points); i++) {
 				        var px = target_points[i][0];
 				        var py = target_points[i][1];
 
-				        // Check if the point is within the vision cone
 				        if (is_point_in_vision_cone(x, y, px, py, cone_angle, cone_direction)) {
-				            // Check for obstructions
 				            if (!collision_line(x, y, px, py, obj_platform, true, true)) {
 				             
 				                return true;
@@ -269,15 +252,14 @@ function create_enemy_behaviors() {
 						    return false;
 						}
 					}
-		            // Vision triangle bounding box setup
 		            var ax, ay_top, ay_bottom, ay;
 		            if (image_xscale == 1) {
-		                ax = bbox_left; // Vision cone's farthest left edge
+		                ax = bbox_left; 
 		                ay_top = bbox_top;
 		                ay_bottom = bbox_bottom;
 						ay = y;
-		            } else { // image_xscale == -1
-		                ax = bbox_right; // Vision cone's farthest right edge (flipped)
+		            } else { 
+		                ax = bbox_right; 
 		                ay_top = bbox_top;
 		                ay_bottom = bbox_bottom;
 						ay = y;
@@ -290,28 +272,16 @@ function create_enemy_behaviors() {
 					var midl = owner.player.midl;
 					var midr = owner.player.midr;
 
-		            // Debug the bounding boxes
-		            show_debug_message("Vision Bounds: ax=" + string(ax) + ", ay_top=" + string(ay_top) + ", ay_bottom=" + string(ay_bottom));
-		            show_debug_message("Target Bounds: tx1=" + string(tx1) + ", ty1=" + string(ty1) + ", tx2=" + string(tx2) + ", ty2=" + string(ty2));
-
-		            // Bounding box overlap check
-		            if (image_xscale == 1) { // Default orientation
+		            if (image_xscale == 1) { 
 		                if (tx2 < ax || tx1 > x || ty2 < ay_top || ty1 > ay_bottom) {
-		                    show_debug_message("Target is completely outside the vision cone (image_xscale == 1)");
 		                    return true;
 		                }
-		            } else { // Flipped orientation
+		            } else { 
 		                if (tx1 > ax || tx2 < x || ty2 < ay_top || ty1 > ay_bottom) {
-		                    show_debug_message("Target is completely outside the flipped vision cone (image_xscale == -1)");
 		                    return true;
 		                }
 		            }
 
-		            show_debug_message("Bounding box overlap confirmed (Step 1 passed).");
-
-		            // Remaining steps (edge simplification and obstruction checks)...
-
-		            // 2. Simplify by checking edges
 		            var target_points = [midl, midr];
 
 		            if (ty1 <= ay_bottom && ty1 >= ay_top) {
@@ -335,41 +305,32 @@ function create_enemy_behaviors() {
 		            }
 
 		            if (array_length(target_points) == 0) {
-		                show_debug_message("No points in the vision cone.");
 		                return true;
 		            }
 
-		            show_debug_message("Edge points confirmed: " + string(array_length(target_points)) + " points.");
-
-					// Vision cone dimensions
-					var length = abs(sprite_width) * abs(image_xscale);  // Account for horizontal scaling
-					var height = abs(sprite_height) * abs(image_yscale); // Full height of the vision cone
+					var length = abs(sprite_width) * abs(image_xscale);  
+					var height = abs(sprite_height) * abs(image_yscale); 
 					
-					// Calculate half-angle of the cone
 					var half_angle = radtodeg(arctan((0.5 * height) / length));
 
-					// Calculate full angle of the vision cone
 					var full_angle = 2 * half_angle;
 					
-					var cone_direction = 90 + image_xscale * 90; // Direction the object is facing
+					var cone_direction = 90 + image_xscale * 90; 
 					var cone_angle = full_angle;   
 
-		            // 3. Obstruction check
 					for (var i = 0; i < array_length(target_points); i++) {
 				        var px = target_points[i][0];
 				        var py = target_points[i][1];
 
-				        // Check if the point is within the vision cone
 				        if (is_point_in_vision_cone(x, y, px, py, cone_angle, cone_direction)) {
-				            // Check for obstructions
 				            if (!collision_line(x, y, px, py, obj_platform, true, true)) {
-				                show_debug_message("Unobstructed point found in vision cone: (" + string(px) + ", " + string(py) + ")");
+				               
 				                return false;
 				            }
 				        }
 				    }
 
-		            show_debug_message("All points obstructed.");
+
 		            return true;
 		        }
 		    }
@@ -382,25 +343,18 @@ function create_enemy_behaviors() {
     };
 }
 
-// Function: Check if a point is within the vision cone
 function is_point_in_vision_cone(x1, y1, x2, y2, cone_angle, cone_direction) {
-    // Calculate angle between object (vision apex) and point
     var dx = x2 - x1;
     var dy = y2 - y1;
     var point_angle = point_direction(0, 0, dx, dy);
 
-    // Normalize angles
     var half_cone = cone_angle / 2;
     var min_angle = cone_direction - half_cone;
     var max_angle = cone_direction + half_cone;
 
-    // Ensure angles are within 0-360 range
     if (min_angle < 0) min_angle += 360;
     if (max_angle >= 360) max_angle -= 360;
-	
-	show_debug_message(string(min_angle) +" " +string(max_angle))
 
-    // Check if the point falls within the cone's angular range
     if (min_angle < max_angle) {
         return point_angle >= min_angle && point_angle <= max_angle;
     } else {

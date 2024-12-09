@@ -75,13 +75,10 @@ handle_collision_modifier(self, "CrouchNoise", "noise", 0.8, calc_multiply, crou
 light_source.x = x;
 light_source.y = y;
 
-show_debug_message(noise);
-
 if(platform != -1){
 	handle_collision_modifier(self, "GroundNoise", "noise", platform.noise_multiplier, calc_multiply, moving);
 }
 
-show_debug_message(noise);
 
 
 

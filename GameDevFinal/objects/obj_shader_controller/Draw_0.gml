@@ -1,12 +1,10 @@
 if (shader_opened) {
     shader_set(gradient_shader);
 
-    // Get the camera's X and Y position
     var cam = view_camera[0];
     var camera_x = camera_get_view_x(cam);
     var camera_y = camera_get_view_y(cam);
 
-    // Pass the camera offset to the shader
     shader_set_uniform_f(shader_get_uniform(gradient_shader, "u_camera_offset"), camera_x, camera_y);
 
     var centers = [];
@@ -19,8 +17,7 @@ if (shader_opened) {
     // Collect data from all light sources
     if (instance_exists(obj_lightsource)) {
         with (obj_lightsource) {
-            if (num_lights < 16) { // Max 16 lights
-                // Add light positions relative to world space
+            if (num_lights < 16) { 
                 array_push(centers, x);
                 array_push(centers, y);
 
@@ -28,14 +25,14 @@ if (shader_opened) {
                 array_push(clear_rads, clear_rad);
                 array_push(dim_rads, dim_rad);
 
-                // Add light direction (normalized vector)
-                var dir_x = dcos(direction); // Direction X component
-                var dir_y = -dsin(direction); // Direction Y component (negative for GameMaker coordinates)
+                // Add light direction
+                var dir_x = dcos(direction); 
+                var dir_y = -dsin(direction); 
                 array_push(directions, dir_x);
                 array_push(directions, dir_y);
 
-                // Add light cone angle (in radians)
-                array_push(angles, angle * pi / 180); // Convert angle to radians
+                // Add light cone angle
+                array_push(angles, angle * pi / 180); 
                 num_lights++;
             }
         }
@@ -57,7 +54,7 @@ if (shader_opened) {
 	    shader_set_uniform_f_array(shader_get_uniform(gradient_shader, "u_env_color"), [0.0, 0.0, 0.0, 1.0]); // Environment color
 
 	}
-    // Trigger the shader by drawing a rectangle
+    // Trigger the shader
     draw_rectangle(0, 0, room_width, room_height, false);
 
     // Reset the shader
